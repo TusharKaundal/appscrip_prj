@@ -1,5 +1,4 @@
 .footerContainer {
-    margin-top: 2rem;
     display: grid;
     padding-inline: clamp(1rem, 7vw, 150px);
     padding-block: 2rem;
