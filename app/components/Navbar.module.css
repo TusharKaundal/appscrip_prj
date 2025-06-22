@@ -1,0 +1,32 @@
+.navbar {
+    display: none;
+    margin-bottom: 24px;
+}
+
+.navlinks {
+    display: flex;
+    gap: 4rem;
+    font-family: var(--font-roboto);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navlinks li a {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 1px;
+    line-height: 100%;
+    color: #000;
+}
+
+
+
+@media (min-width: 768px) {
+    .navbar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
