@@ -22,7 +22,10 @@
 }
 
 .filterOverlay {
-    position: relative;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
     z-index: 2000;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
 }
@@ -77,10 +80,17 @@
 
 @media (min-width: 768px) {
 
-    .overlay,
-    .filterOverlay {
+    .overlay {
         display: none;
         visibility: hidden;
         opacity: 0;
+    }
+
+    .filterOverlay {
+        display: block;
+        position: none;
+        inset: none;
+        z-index: 0;
+        box-shadow: none;
     }
 }

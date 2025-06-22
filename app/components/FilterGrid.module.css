@@ -1,19 +1,20 @@
 .filterGrid {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    gap: 1rem;
-    padding-block: clamp(1rem, 2vw, 1.5rem);
     padding-inline: clamp(1rem, 5vw, 96px);
+    padding-block: clamp(1rem, 2vw, 1.5rem);
     border-bottom: 1px solid #e5e7eb;
     transition: padding-inline 0.3s ease-in-out;
 }
 
 .filterTab {
-    display: flex;
-    align-items: center;
-    gap: 2.5rem
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
 }
+
 
 
 .filterShowHideButton {
@@ -32,12 +33,43 @@
 }
 
 .filterRecommended {
-    width: 200px
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.filterMobileTab {
+    text-align: center;
+    width: 100%;
+    border-right: 2px solid #e5e7eb;
+    transition: all 0.3s ease-in-out;
 }
 
 
 @media (min-width: 768px) {
     .filterGrid {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
         padding-inline: 0;
+    }
+
+    .filterMobileTab {
+        display: none;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .filterTab {
+        display: flex;
+        align-items: center;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .filterRecommended {
+        width: fit-content;
     }
 }

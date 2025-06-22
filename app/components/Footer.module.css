@@ -1,0 +1,134 @@
+.footerContainer {
+    margin-top: 2rem;
+    display: grid;
+    padding-inline: clamp(1rem, 7vw, 150px);
+    padding-block: 2rem;
+    background-color: black;
+    color: white;
+}
+
+.footerSubscribe {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-block: 1.5rem;
+    border-bottom: 2px solid white;
+}
+
+.footerForm {
+    display: flex;
+    gap: 1rem;
+}
+
+.footerFormEmail {
+    padding: 0.8rem;
+    border: none;
+    outline: none;
+    background-color: white;
+    color: black;
+    font-size: 14px;
+    font-weight: 500;
+    width: 220px;
+}
+
+.footerFormButton {
+    padding: 0.8rem;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    text-transform: uppercase;
+    color: gray;
+    font-size: 14px;
+    font-weight: 500;
+    width: fit-content;
+    border: 1px solid gray;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.footerCallUs {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding-block: 1.5rem;
+    border-bottom: 2px solid white;
+}
+
+.footerCallUsDetails {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.currency {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 14px;
+    font-weight: 500;
+    padding-block: 1.5rem;
+    border-bottom: 2px solid white;
+}
+
+.mettaMuse {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-block: 1.5rem;
+    border-bottom: 2px solid white;
+
+    & a {
+        text-decoration: none;
+        color: rgb(210, 208, 208);
+    }
+}
+
+.quickLinks {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-block: 1.5rem;
+    border-bottom: 2px solid white;
+
+    & a {
+        text-decoration: none;
+        color: rgb(210, 208, 208);
+    }
+}
+
+.followUs {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-block: 1.5rem;
+    border-bottom: 2px solid white;
+
+    & .socials {
+        display: flex;
+        gap: 1rem;
+    }
+}
+
+.paymantAccepts {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-block: 1.5rem;
+    border-bottom: 2px solid white;
+}
+
+
+.paymentMethods {
+    display: flex;
+    gap: 10px;
+
+    & img {
+        border-radius: 10px;
+        object-fit: cover;
+        background-color: white;
+        padding: 0.2rem;
+        border-radius: 2px;
+    }
+}

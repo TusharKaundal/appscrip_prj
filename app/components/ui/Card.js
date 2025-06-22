@@ -5,7 +5,7 @@ import trimmer from "@/app/utils/helper";
 
 const Card = ({ image, title }) => {
   const [isFavorite, setIsFavorite] = useState(false);
-  const trimmedTitle = trimmer(title, 30);
+  const trimmedTitle = trimmer(title, 20);
   return (
     <div className={styles.card}>
       <Image
@@ -15,7 +15,7 @@ const Card = ({ image, title }) => {
         width={100}
         height={100}
       />
-      <h3>{trimmedTitle}</h3>
+      <h3 className={styles.productTitle}>{trimmedTitle}</h3>
       <div className={styles.context}>
         <p>Sign in or Create an account to see pricing</p>
         <div className={styles.favorite}>
