@@ -17,8 +17,9 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body className={`${inter.variable} ${roboto.variable}`}>{children}</body>
     </html>
   );

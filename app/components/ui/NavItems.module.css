@@ -1,0 +1,13 @@
+.navItems {
+    padding: 1rem;
+    border-bottom: 1px solid #e5e7eb;
+    text-align: start;
+    text-decoration: none;
+    color: #000;
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-family: var(--font-inter);
+    letter-spacing: 1px;
+    line-height: 100%;
+    text-transform: uppercase;
+}

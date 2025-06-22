@@ -1,0 +1,18 @@
+.productGridContainer {
+    padding: 0 1rem;
+    margin-top: clamp(1rem, 5vw, 2rem);
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+
+
+@media (min-width: 768px) {
+    .productGridContainer {
+        padding: 0;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 1rem;
+    }
+}

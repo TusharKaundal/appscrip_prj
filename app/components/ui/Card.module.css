@@ -1,0 +1,49 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+    overflow: hidden;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #E0E0E0;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    padding-inline: 5px;
+}
+
+.context {
+    display: flex;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    font-family: var(--font-Roboto);
+}
+
+.productImage {
+    margin-top: 10px;
+    margin-inline: auto;
+}
+
+.favorite {
+    cursor: pointer;
+    transition: transform 0.2s ease;
+
+    & img {
+        width: 16px;
+    }
+}
+
+.favorite:hover {
+    transform: scale(1.1);
+}
+
+
+
+@media (min-width: 768px) {
+    .favorite {
+        width: 24px;
+    }
+}

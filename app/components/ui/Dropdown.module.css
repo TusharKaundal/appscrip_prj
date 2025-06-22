@@ -1,0 +1,85 @@
+.dropdownContainer {
+    position: relative;
+}
+
+.customInput {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.selectedText {
+    font-size: 14px;
+    font-weight: bold;
+    color: #374151;
+}
+
+.arrow {
+    transition: transform 0.2s ease-in-out;
+    display: flex;
+    align-items: center;
+}
+
+.arrowUp {
+    transform: rotate(180deg);
+}
+
+.dropdownOptions {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    margin-top: 4px;
+    background-color: white;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    z-index: 1000;
+    min-width: 100px;
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: all 0.3s ease-in-out;
+}
+
+.dropdownOptions.open {
+    max-height: 210px;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.option {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 16px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.option:hover {
+    background-color: #f9fafb;
+}
+
+.option.selected {
+    background-color: #f3f4f6;
+    font-weight: bold;
+    color: #374151;
+}
+
+.optionText {
+    font-size: 14px;
+    color: #374151;
+    text-align: right;
+    flex: 1;
+}
+
+.tickIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}

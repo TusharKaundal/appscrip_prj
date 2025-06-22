@@ -1,0 +1,43 @@
+.filterGrid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding-block: clamp(1rem, 2vw, 1.5rem);
+    padding-inline: clamp(1rem, 5vw, 96px);
+    border-bottom: 1px solid #e5e7eb;
+    transition: padding-inline 0.3s ease-in-out;
+}
+
+.filterTab {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem
+}
+
+
+.filterShowHideButton {
+    display: flex;
+    align-items: center;
+    gap: 0.1rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    text-decoration: underline;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #888792;
+    text-transform: uppercase;
+    font-family: var(--font-roboto);
+}
+
+.filterRecommended {
+    width: 200px
+}
+
+
+@media (min-width: 768px) {
+    .filterGrid {
+        padding-inline: 0;
+    }
+}

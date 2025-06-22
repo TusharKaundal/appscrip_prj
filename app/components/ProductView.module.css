@@ -1,0 +1,22 @@
+.productView {
+    padding-inline: 0;
+    transition: padding-inline 0.3s ease-in-out;
+    overflow-x: hidden;
+}
+
+.productFilterContainer {
+    display: flex;
+    gap: 10px;
+}
+
+@media (min-width: 768px) {
+    .productView {
+        padding-inline: 48px;
+    }
+}
+
+@media (min-width: 992px) {
+    .productView {
+        padding-inline: 96px;
+    }
+}
