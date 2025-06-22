@@ -7,7 +7,6 @@ const ProductGrid = ({ products }) => {
       {products.map((product) => (
         <Card key={product.id} title={product.title} image={product.image} />
       ))}
-      hi
     </div>
   );
 };
