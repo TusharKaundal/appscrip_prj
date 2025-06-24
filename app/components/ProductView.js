@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import FilterGrid from "./FilterGrid";
 import styles from "./ProductView.module.css";
 import SideBar from "./ui/SideBar";
@@ -20,6 +20,12 @@ const FILTERS = {
 
 const ProductView = ({ products }) => {
   const [isSideBarOpen, setIsSideBarOpen] = useState(false);
+  const [isHydrated, setIsHydrated] = useState(false);
+
+  useEffect(() => {
+    setIsHydrated(true);
+  }, []);
+
   const screenWidth = useScreenWidth();
   // State for each filter's selected options
   const [selectedFilters, setSelectedFilters] = useState(
@@ -54,7 +60,9 @@ const ProductView = ({ products }) => {
         <SideBar
           title="filter"
           isOpen={isSideBarOpen}
-          customStyle={(screenWidth ?? 0) < 768 ? "filterOverlay" : ""}
+          customStyle={
+            isHydrated && (screenWidth ?? 0) < 768 ? "filterOverlay" : ""
+          }
         >
           <div>
             {Object.entries(FILTERS).map(([key, options]) => (

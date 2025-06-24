@@ -49,6 +49,8 @@
 
         text-transform: uppercase;
         font-family: var(--font-roboto);
+        width: fit-content;
+        margin-inline: auto;
 
         &:hover {
             cursor: pointer;
