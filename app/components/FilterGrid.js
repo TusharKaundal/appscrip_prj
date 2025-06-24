@@ -34,13 +34,14 @@ const FilterGrid = ({ isOpen, handleSideBar, totalProducts }) => {
           {isOpen ? "Hide Filter" : "Show Filter"}
         </button>
       </div>
-      <div
-        className={styles.filterMobileTab}
-        onClick={() => {
-          handleSideBar((prev) => !prev);
-        }}
-      >
-        <h3>Filter</h3>
+      <div className={styles.filterMobileTab}>
+        <h3
+          onClick={() => {
+            handleSideBar((prev) => !prev);
+          }}
+        >
+          Filter
+        </h3>
       </div>
       <div className={styles.filterRecommended}>
         <Dropdown options={sortOptions} defaultOption="Recommended" />

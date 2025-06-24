@@ -44,6 +44,16 @@
     width: 100%;
     border-right: 2px solid #e5e7eb;
     transition: all 0.3s ease-in-out;
+
+    & h3 {
+
+        text-transform: uppercase;
+        font-family: var(--font-roboto);
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
 }
 
 
@@ -70,6 +80,6 @@
     }
 
     .filterRecommended {
-        width: fit-content;
+        width: max-content;
     }
 }

@@ -24,7 +24,6 @@ const Card = ({ image, title }) => {
             alt="favorite"
             width={24}
             height={24}
-            className={styles.heartIcon}
             onClick={() => setIsFavorite(!isFavorite)}
           />
         </div>

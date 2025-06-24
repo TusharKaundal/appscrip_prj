@@ -1,0 +1,84 @@
+.accordion {
+    background-color: white;
+    border-bottom: 1px solid #eee;
+    padding-inline: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    padding-block: 12px;
+}
+
+.heading {
+    font-weight: 600;
+    font-size: 14px;
+    font-family: var(--font-roboto);
+    line-height: 100%;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.selectedOptions {
+    color: #666;
+    font-size: 0.95rem;
+    margin-top: 4px;
+}
+
+.content {
+    padding-block: 0px;
+    height: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s ease-in-out, all 0.3s ease-in-out;
+}
+
+.content.open {
+    padding-block: 12px;
+    height: auto;
+    opacity: 1;
+    visibility: visible;
+}
+
+.unselectBtn {
+    border: none;
+    background: none;
+    padding: 0;
+    text-decoration: underline;
+    color: lightgray;
+    margin-bottom: 12px;
+    cursor: pointer;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    text-transform: capitalize;
+}
+
+.optionItem {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.arrow {
+    display: flex;
+    align-items: center;
+    transition: transform 0.2s ease-in-out;
+}
+
+.arrowUp {
+    transform: rotate(180deg);
+}
+
+@media (min-width: 768px) {
+    .accordion {
+        padding-inline: 0;
+    }
+}
