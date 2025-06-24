@@ -54,7 +54,7 @@ const ProductView = ({ products }) => {
         <SideBar
           title="filter"
           isOpen={isSideBarOpen}
-          customStyle={screenWidth < 768 ? "filterOverlay" : ""}
+          customStyle={(screenWidth ?? 0) < 768 ? "filterOverlay" : ""}
         >
           <div>
             {Object.entries(FILTERS).map(([key, options]) => (
